@@ -82,8 +82,8 @@ export class StartupGroupStore {
     return config
   }
 
-  isCreationLocked(isLicenseActive: boolean) {
-    return !isLicenseActive && this.groups.length >= 1
+  isCreationLocked(_isLicenseActive: boolean) {
+    return false
   }
 
   async add(draft: StartupGroupDraft) {
